@@ -1,0 +1,5 @@
+
+.anim:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+  }

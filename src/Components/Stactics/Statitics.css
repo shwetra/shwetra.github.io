@@ -1,0 +1,74 @@
+.statisticmain{
+    background-color: rgb(26,32,44);
+    color: white;
+    height: 430px;
+    }
+    .stat
+      {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        /* margin-bottom: 20px; */
+        margin-left: 12%;
+        margin-top: 5%;
+      }
+      .individualStat {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        width: 140px;
+        text-align: center;
+      }
+      .individualStat> div:nth-child(1):hover{
+        background-color: white;
+        color: black;
+        transform: scale(1.001);
+       
+        transition: .15s ease-in;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      .individualStat > div:nth-child(1) {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: auto;
+        font-size: 23px;
+        font-weight: 600;
+        height: 130px;
+        width: 130px;
+        border: 10px solid rgba(66, 153, 225, 0.6);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+      }
+      @media screen and (max-width: 950px){
+        .stat
+      {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 20%;
+      }
+      .individualStat > div:nth-child(1) {
+       
+        margin-top: 15%;
+        
+      }
+      .statisticmain{
+        height:100%;
+        padding-bottom: 20px;
+      }
+    }
+    @media screen and (max-width: 600px){
+        .stat
+        {
+          grid-template-columns: repeat(1, 1fr);
+          margin-left: 32%;
+        }
+        .statisticmain{
+          height:100%;
+          padding-bottom: 20px;
+        }
+        .individualStat > div:nth-child(1) {
+       
+          margin-top: 15%;
+          
+        }
+    }

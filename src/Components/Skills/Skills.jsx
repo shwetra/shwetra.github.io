@@ -117,7 +117,7 @@ const Skills = () => {
           return (
           <Link href={t.link}  className="anim"
           >
-            <Stack justifyContent={'center'} alignItems={'center'} border="1px solid" borderColor={"gray.300"} rounded={"xl"} mx={8} p={2
+            <Stack justifyContent={'center'} alignItems={'center'} border="5px solid" borderColor={"gray.300"} rounded={"xl"} mx={8} p={2
             }>
               <Box fontSize={"3xl"} color={t.color}>{t.icon}</Box>
               <Text fontSize={"md"}>{t.name}</Text>

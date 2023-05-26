@@ -54,10 +54,20 @@ const Project = () => {
       image:
         "https://user-images.githubusercontent.com/104376252/202198806-05021051-889c-4a43-bdb4-187e34f418c6.png",
     },
+    {
+      title: "As-Destination",
+      link: "https://asdestination.vercel.app/",
+      url: "https://github.com/shwetra/hotel",
+      description:
+        "At As-Destination, we are passionate about providing unforgettable travel experiences to our customers. Our mission is to help you discover the world in a way that is authentic, immersive, and sustainable.",
+      language: ["React", " ", "Redux"," ","MongoDB"," ","Node"," ","Express","Chakra-UI"," ","Material-Ui"],
+      image:
+        "https://github.com/shwetra/assa/assets/104376252/bdc6975b-4e00-4d46-9648-a5154ae06011",
+    },
    
   ];
   return (
-    <Box mt={40} id="projects">
+    <Box m="auto" mt={40} w="90%" id="projects">
       <Heading color={"blue.500"}>Projects</Heading>
       <SimpleGrid columns={[1, 1, 2, 3]} spacing={4} mt={8}>
         {ProjectData.map((t) => {
@@ -65,7 +75,7 @@ const Project = () => {
             <Stack
               justifyContent={"center"}
               alignItems={"center"}
-              border="1px solid"
+              border="5px solid"
               borderColor={"gray.300"}
               rounded={"xl"}
               mx={8}
@@ -73,8 +83,8 @@ const Project = () => {
             >
               <Image src={t.image} />
               <Text fontSize={"1.3rem"}>{t.title}</Text>
-              <Text>{t.language}</Text>
-              <Text>{t.description}</Text>
+              <Text fontWeight={700}>{t.language}</Text>
+              <Text textAlign={"justify"}>{t.description}</Text>
 
               <Flex justifyContent={"space-between"} gap={[4]}>
                 <Button target="_blank" as="a" href={t.url} bg={"blue.300"}>

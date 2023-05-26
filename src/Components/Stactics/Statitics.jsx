@@ -130,7 +130,7 @@ const Statitics = () => {
           return (
           <Link href={t.link}  className="anim"
           >
-            <Stack justifyContent={'center'} alignItems={'center'} border="1px solid" borderColor={"gray.300"} rounded={"xl"} mx={8} p={2
+            <Stack justifyContent={'center'} alignItems={'center'} border="4px solid" borderColor={"gray.300"} rounded={"xl"} mx={8} p={2
             }>
               <CircularProgress value={t.value} color='green.400' >
               <CircularProgressLabel>
